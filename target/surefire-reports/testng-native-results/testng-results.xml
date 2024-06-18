@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-17T02:33:24 IST" name="Surefire suite" finished-at="2024-05-17T02:33:34 IST" duration-ms="10065">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@460d0a57]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-17T02:33:24 IST" name="Surefire test" finished-at="2024-05-17T02:33:34 IST" duration-ms="10065">
+      <class name="Runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestRunner@460d0a57]" started-at="2024-05-17T02:33:24 IST" name="setUpClass" finished-at="2024-05-17T02:33:24 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@460d0a57]" started-at="2024-05-17T02:33:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-17T02:33:34 IST" duration-ms="9535" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Create a Userdetails"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Creation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+at BusinessLogic.BusinessLogin.contactInformation(BusinessLogin.java:28)
+at StepDef.AccountCreation.provideContactInformation(AccountCreation.java:31)
+at ✽.Provide contact information "Karthika", "Sengottaiyan", "9791510104","skarthikamca10@gmail.com"(file:///E:/AutomationPOC/src/test/resources/Features/Test.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@460d0a57]" started-at="2024-05-17T02:33:34 IST" name="tearDownClass" finished-at="2024-05-17T02:33:34 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

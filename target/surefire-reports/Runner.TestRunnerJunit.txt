@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunnerJunit
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! -- in Runner.TestRunnerJunit
+Runner.TestRunnerJunit -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.AbstractMethodError: Receiver class io.cucumber.junit.JUnitCucumberOptionsProvider$JunitCucumberOptions does not define or inherit an implementation of the resolved method 'abstract java.lang.Class uuidGenerator()' of interface io.cucumber.core.options.CucumberOptionsAnnotationParser$CucumberOptions.
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addUuidGenerator(CucumberOptionsAnnotationParser.java:148)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:46)
+	at io.cucumber.junit.Cucumber.<init>(Cucumber.java:120)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+

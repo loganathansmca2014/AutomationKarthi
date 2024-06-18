@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.32 s <<< FAILURE! -- in TestSuite
+Runner.TestRunner.runScenario["To Create a Userdetails", "Optional[Account Creation]"](1) -- Time elapsed: 9.540 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+	at BusinessLogic.BusinessLogin.contactInformation(BusinessLogin.java:28)
+	at StepDef.AccountCreation.provideContactInformation(AccountCreation.java:31)
+	at ✽.Provide contact information "Karthika", "Sengottaiyan", "9791510104","skarthikamca10@gmail.com"(file:///E:/AutomationPOC/src/test/resources/Features/Test.feature:6)
+
